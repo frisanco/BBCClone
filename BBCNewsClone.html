@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Technology - BBC News</title>
+    <style type="text/css">
+
+    #top-tabs {
+      width: 1000px;
+      margin: 0 auto;
+      height: 40px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      color: #323534;
+    }
+
+    #logo {
+      margin-top: 8px;
+      float: left;
+      margin-right: 8px;
+      margin-left: 4px;
+    }
+
+    .topbar-section {
+      float: left;
+      border-left: 1px #CCCCCC solid;
+      height: 100%;
+    }
+
+    #signin-img {
+      margin: 8px 4px 8px 12px;
+      float: left;
+      height: 65%
+    }
+
+    #signin-text {
+      font-weight: bold;
+      font-size: 80%;
+      position: relative;
+      top: 11px;
+      padding-right: 82px;
+    }
+
+    .tabs {
+      font-weight: bold;
+      font-size: 80%;
+      position: relative;
+      top: 11px;
+      margin: 0px 12px;
+    }
+
+    #more-arrow {
+      margin: 12px 1px 0px 50px;
+      float: right;
+    }
+
+    #search-box {
+      background-color: #E6E5E2;
+      border: none;
+      font-weight: bold;
+      padding: 5px;
+      margin: 8px 0px 0px 10px;
+      float: left;
+      width: 75%;
+    }
+
+    #magnifying-glass {
+      height: 25px;
+      margin-top: 8px;
+    }
+
+    #menu-bar-container {
+      background-color: #D40000;
+      height: 57px;
+    }
+
+    #menu-bar {
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+    #menu-bar-2-container {
+      background-color: #C10200;
+      width: 100%;
+    }
+
+    #menu-bar-2 {
+      width: 1000px;
+      margin: 0 auto;
+      height: 35px;
+    }
+
+    #menu-bar-2 a {
+      color: white;
+      text-decoration: none;
+      padding: 0 10px;
+      border-left: 1px #D23D3E solid;
+      font-size: 14px;
+      position: relative;
+      top: 4px;
+      right: 7px;
+    }
+
+    #menu-bar-2 a:hover {
+      text-decoration: underline;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    h1 {
+      padding: 0px 0px 0px 1px;
+      margin: 0;
+      color: white;
+      font-size: 42px;
+      font-weight: normal;
+      padding-top: 5px;
+    }
+
+    #home {
+      border: none !important;
+    }
+
+    #redarrow {
+      position: relative;
+      top: 10px;
+    }
+
+    #page-container {
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 20px;
+      border-bottom: 3px solid #D40000;
+      width: 102px;
+      padding: 0;
+      margin: 10px 3px;
+    }
+
+    h3 a {
+      color: black;
+      font-size: 30px;
+      text-decoration: none;
+    }
+
+    h3 a:visited {
+      color: #5a5a5a;
+    }
+
+    h3 a:hover {
+      color: #1167a8;
+    }
+
+    #article-summary {
+      color: #5a5a5a;
+      width: 220px;
+      text-decoration: none;
+      font-size: 97%;
+      float: left;
+    }
+
+    #article-summary img {
+      position: relative;
+      top: 8px;
+    }
+
+    #topic-link {
+      text-decoration: none;
+      color: #a91717;
+      border-left: 1px solid #CCCCCC;
+      padding-left: 10px;
+    }
+
+    #article-summary a:hover {
+      color: #1167a8;
+    }
+
+    .date {
+      padding-right: 10px;
+      color: #5a5a5a;
+      font-size: 90%;
+      position: relative;
+      top: -15px;
+    }
+
+    #article-container {
+      float: left;
+      width: 670px;
+      border-right: 1px solid #CCCCCC;
+    }
+
+    #main-article-image {
+      width: 400px;
+      margin-left: 30px;
+    }
+
+    #article-hr {
+      border-top: 1px solid #a91717;
+      width: 50px;
+    }
+
+    .article-link {
+      color: black;
+      text-decoration: none;
+    }
+
+    #watch-listen-container {
+      float: right;
+      margin-left: 20px;
+      width: 300px;
+      position: relative;
+      top: -346px;
+      left: -10px;
+    }
+
+    h4 {
+      font-weight: normal;
+      font-size: 25px;
+    }
+
+    .article-side-image {
+      float:left;
+      margin-right: 10px;
+    }
+
+    .watch-listen-link {
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .watch-listen-link:hover {
+      color: #1167a8;
+    }
+
+    .side-article {
+      float: right;
+      width: 180px;
+      position: relative;
+      top: -18px;
+    }
+
+    .clock {
+      position: relative;
+      top: -8px;
+    }
+
+    .no-border {
+      border-left: none;
+      padding: 0;
+    }
+
+    .border-right {
+      border-right: 1px solid #CCCCCC;
+    }
+
+    </style>
+
+  </head>
+  <body>
+
+    <div id="top-tabs">
+      <img id="logo" src="images\bbc-blocks-dark.png" alt="BBC blocks">
+      <div id="signin-div" class="topbar-section">
+        <img id="signin-img" src="images\signin.PNG" alt="signin head">
+          <span id="signin-text">Sign in</span>
+      </div>
+
+      <div id="news" class="topbar-section">
+          <span class="tabs">News</span>
+      </div>
+
+      <div id="sport" class="topbar-section">
+          <span class="tabs">Sport</span>
+      </div>
+
+      <div id="weather" class="topbar-section">
+          <span class="tabs">Weather</span>
+      </div>
+
+      <div id="shop" class="topbar-section">
+          <span class="tabs">Shop</span>
+      </div>
+
+      <div id="earth" class="topbar-section">
+          <span class="tabs">Earth</span>
+      </div>
+
+      <div id="travel" class="topbar-section">
+          <span class="tabs">Travel</span>
+      </div>
+
+      <div id="more" class="topbar-section">
+          <span class="tabs">More</span>
+          <img id="more-arrow" src="images\arrow.PNG" alt="more dropdown arrow">
+      </div>
+
+      <div class="topbar-section">
+        <input id="search-box" type="text" value="Search" placeholder="Search">
+        <img id="magnifying-glass" src="images\magnify.PNG" alt="magnifying-glass">
+      </div>
+
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="menu-bar-container">
+      <div id="menu-bar">
+        <h1>NEWS</h1>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="menu-bar-2-container">
+      <div id="menu-bar-2">
+        <a id="home" href="">Home</a>
+        <a href="">Video</a>
+        <a href="">World</a>
+        <a href="">US & Canada</a>
+        <a href="">UK</a>
+        <a href="">Business</a>
+        <a href="">Tech</a>
+        <a href="">Science</a>
+        <a href="">Stories</a>
+        <a href="">Entertainment & Arts</a>
+        <a href="">Health</a>
+        <a href="">More</a>
+        <img id="redarrow" src="images\redarrow.PNG" alt="White more arrow">
+
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="page-container">
+      <div id="main-article" >
+
+        <h2>Technology</h2>
+
+        <div id="article-container">
+          <h3><a href="">Major flaw in millions of Intel chips</h3></a>
+          <div id="article-summary">
+            <p>A serious bug will need to be patched in millions of machines from the last decade.</p>
+            <p><img src="images\clock.PNG"> 4 hours ago <a id="topic-link" href="">Technology</a></p>
+            <hr align="left" id="article-hr">
+            <p><a class="article-link" href="">Intel makes $15bn bet on driverless cars</a></p>
+            <p><a class="article-link" href="">Intel reveals credit card-sized computer</a></p>
+          </div>
+          <img id="main-article-image" src="images\intel.PNG" alt="Intel box">
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+      <div id="watch-listen-container">
+        <h4>Watch/Listen</h4>
+
+        <img class="article-side-image" src="images\robot.PNG" alt="Robot">
+        <div class="side-article">
+          <p><a class="watch-listen-link" href="">'A conversation with myself, as a robot'</a></p>
+          <p><img class="clock" src="images\clock.PNG"> <span class="date">30 December 2017</span></p>
+        </div>
+
+        <div class="clear"></div>
+
+        <img class="article-side-image" src="images\baby.PNG" alt="Baby">
+        <div class="side-article">
+          <p><a class="watch-listen-link" href="">How baby play is helping robots learn</a></p>
+          <p><img class="clock" src="images\clock.PNG"> <span class="date border-right">26 December 2017</span></p>
+        </div>
+
+        <div class="clear"></div>
+
+        <img class="article-side-image" src="images\africa.PNG" alt="Africa">
+        <div class="side-article">
+          <p><a class="watch-listen-link" href="">Planning Africa's smart cities</a></p>
+          <p><img class="clock" src="images\clock.PNG"> <span class="date border-right">29 December 2017</span></p>
+        </div>
+
+        <div class="clear"></div>
+
+        <img class="article-side-image" src="images\deer.PNG" alt="Deer">
+        <div class="side-article">
+          <p><a class="watch-listen-link" href="">Can AI keep these zoo animals warm?</a></p>
+          <p><img class="clock" src="images\clock.PNG"> <span class="date border-right">27 December 2017</span></p>
+        </div>
+
+        <div class="clear"></div>
+
+        <img class="article-side-image" src="images\woman.PNG" alt="Woman">
+        <div class="side-article">
+          <p><a class="watch-listen-link" href="">Agoraphobic woman who travels the world</a></p>
+          <p><img class="clock" src="images\clock.PNG"> <span class="date border-right">4 October 2017</span></p>
+        </div>
+
+        <div class="clear"></div>
+
+        <img class="article-side-image" src="images\bitcoin.PNG" alt="Bitcoin">
+        <div class="side-article">
+          <p><a class="watch-listen-link" href="">The short crazy history of Bitcoin in 2017</a></p>
+          <p><img class="clock" src="images\clock.PNG"> <span class="date border-right">27 December 2017</span></p>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+    </div>
+
+  </body>
+</html>
